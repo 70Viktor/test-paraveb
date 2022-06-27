@@ -3,7 +3,7 @@
         <div class="container">
             <sticky-filter/>
             <section class="card__wrapper">
-                <app-card v-for="(article, index) in ARTICLES" :key="index" :article="article"/>
+                <app-card v-for="(article, index) in filteredArticles" :key="index" :article="article"/>
             </section>
         </div>
     </main>
@@ -17,8 +17,15 @@
         name: "AppBody",
         components: {StickyFilter, AppCard},
         computed: {
-            ...mapState(['ARTICLES'])
-        }
+            ...mapState(['ARTICLES', 'selectedAUTHOR']),
+            filteredArticles() {
+                if (this.selectedAUTHOR === '') {
+                    return this.ARTICLES
+                } else {
+                    return this.ARTICLES.filter(article => article.author === this.selectedAUTHOR)
+                }
+            }
+        },
     }
 </script>
 

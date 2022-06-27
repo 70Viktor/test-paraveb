@@ -1,5 +1,7 @@
 <template>
-    <vue-carousel class="slider" :data="data"></vue-carousel>
+    <section class="slider">
+        <vue-carousel :data="data"></vue-carousel>
+    </section>
 </template>
 
 <script>

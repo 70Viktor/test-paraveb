@@ -1,6 +1,6 @@
 <template>
     <article class="card">
-        <date class="card__date">{{ date }}</date>
+        <time class="card__date">{{ date }}</time>
         <div class="card__title">
             <h2 class="card__title--truncated">
                 {{ article.title }}
