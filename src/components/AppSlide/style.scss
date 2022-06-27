@@ -1,0 +1,42 @@
+.wrap {
+  background: url("@/assets/img-hero.png") bottom right no-repeat, linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
+  padding: 100px 0 180px;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+.slide {
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56px;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    max-width: 520px;
+    margin-top: 24px;
+    color: #FFFFFF;
+  }
+
+  &__btn {
+    margin-top: 32px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #0050EF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 32px;
+  }
+
+  .bg__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    & img {
+      max-width: 100%;
+    }
+  }
+}
