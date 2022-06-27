@@ -3,7 +3,8 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     ARTICLES: [],
-    AUTHORS: []
+    AUTHORS: [],
+    selectedAUTHOR: ''
   },
   getters: {
   },
@@ -13,6 +14,9 @@ export default createStore({
     },
     ADD_ARTICLE (state, article) {
       state.ARTICLES.push(article)
+    },
+    SELECT_AUTHOR(state, author) {
+        state.selectedAUTHOR = author
     }
   },
   actions: {

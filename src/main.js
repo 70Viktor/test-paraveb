@@ -4,4 +4,8 @@ import router from './router'
 import store from './store'
 import VueCarousel from '@chenfengyuan/vue-carousel'
 
-createApp(App).use(store).use(router).component(VueCarousel.name, VueCarousel).mount('#app')
+createApp(App)
+    .use(store)
+    .use(router)
+    .component(VueCarousel.name, VueCarousel)
+    .mount('#app')

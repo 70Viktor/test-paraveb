@@ -1,9 +1,10 @@
 <template>
     <main class="wrap">
         <div class="container">
-            <div class="card__wrapper">
+            <sticky-filter/>
+            <section class="card__wrapper">
                 <app-card v-for="(article, index) in ARTICLES" :key="index" :article="article"/>
-            </div>
+            </section>
         </div>
     </main>
 </template>
@@ -11,9 +12,10 @@
 <script>
     import AppCard from "@/components/AppCard/AppCard";
     import { mapState } from 'vuex'
+    import StickyFilter from "@/components/StickyFilter/StickyFilter";
     export default {
         name: "AppBody",
-        components: {AppCard},
+        components: {StickyFilter, AppCard},
         computed: {
             ...mapState(['ARTICLES'])
         }

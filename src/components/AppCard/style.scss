@@ -25,7 +25,7 @@
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
-      height: 32px
+      height: 32px;
     }
   }
   &__description {
@@ -45,7 +45,6 @@
   &__author {
 
     align-self: flex-start;
-    margin-top: 32px;
     margin-top: auto;
     background: rgba(0, 80, 239, 0.06);
     border-radius: 10px;

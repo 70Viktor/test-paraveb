@@ -1,0 +1,68 @@
+.select__wrap {
+  max-width: 340px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  position: relative;
+}
+
+.select__selected {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &_icon {
+    cursor: pointer;
+  }
+  &_placeholder {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #888888;
+  }
+  &_arrow {
+    margin-left: auto;
+    transition: 0.3s;
+    &._active {
+      transform: rotateZ(180deg);
+    }
+  }
+}
+
+.select__items {
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 120%;
+  background: #FFFFFF;
+  width: 100%;
+  border-radius: 20px;
+  padding: 16px 6px 16px 0;
+
+  &_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 300px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 6px;               /* ширина scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+      background: unset;        /* цвет дорожки */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 80, 239, 0.2);   /* цвет плашки */
+      border-radius: 20px;       /* закругления плашки */
+    }
+  }
+}
+
+.select__item {
+  cursor: pointer;
+  padding: 5px 16px;
+  width: 100%;
+  &:hover {
+    background: rgba(0, 80, 239, 0.2);
+  }
+}
