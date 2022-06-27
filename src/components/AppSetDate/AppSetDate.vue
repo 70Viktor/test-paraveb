@@ -11,6 +11,7 @@
 <script>
     export default {
         name: "AppSetDate"
+    }
 </script>
 
 <style lang="scss" scoped>
