@@ -11,11 +11,16 @@
                 {{ article.description }}
             </p>
         </div>
-        <a v-show="article.author !== null" href="#" class="card__author">{{ article.author }}</a>
+        <a
+                v-show="article.author !== null"
+                href="#"
+                class="card__author"
+        @click.prevent="selectAUTHOR">{{ article.author }}</a>
     </article>
 </template>
 
 <script>
+    import { mapMutations } from 'vuex'
     export default {
         name: "AppCard",
         props: {
@@ -28,6 +33,12 @@
                     .split(' ')
                     .slice(1,4)
                     .join(' ')
+            }
+        },
+        methods: {
+            ...mapMutations(['SELECT_AUTHOR']),
+            selectAUTHOR() {
+                this.SELECT_AUTHOR(this.article.author)
             }
         }
     }

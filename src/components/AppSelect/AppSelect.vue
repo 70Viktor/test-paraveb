@@ -1,6 +1,6 @@
 <template>
     <div class="select__wrap">
-        <div class="select__selected" @click="openSelect = !openSelect">
+        <div class="select__selected" @click.stop="openSelect = !openSelect">
             <img src="@/assets/icon-author.svg" class="select__selected_icon" @click.stop="SELECT_AUTHOR('')">
             <div class="select__selected_placeholder">{{ selectedAUTHOR ? selectedAUTHOR : 'Выбор автора' }}</div>
             <img src="@/assets/icon-arrow.svg" alt="" class="select__selected_arrow" :class="{'_active': openSelect}">
@@ -39,6 +39,9 @@
                 this.SELECT_AUTHOR(author)
                 this.openSelect = false
             }
+        },
+        mounted() {
+            document.addEventListener('click', () => this.openSelect = false)
         }
     }
 </script>

@@ -10,7 +10,9 @@ export default createStore({
   },
   mutations: {
     ADD_AUTHOR (state, author) {
-      state.AUTHORS.push(author)
+      if (!state.AUTHORS.includes(author) && author !== null) {
+          state.AUTHORS.push(author)
+      }
     },
     ADD_ARTICLE (state, article) {
       state.ARTICLES.push(article)
