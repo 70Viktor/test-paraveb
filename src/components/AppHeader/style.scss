@@ -7,8 +7,14 @@
   background: #F7F9FF;
 
   &__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 88px;
     @media (max-width: 768px) {
@@ -25,7 +31,11 @@
     }
   }
   &__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 40px;
     @media (max-width: 768px) {

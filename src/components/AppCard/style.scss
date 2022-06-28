@@ -2,8 +2,15 @@
   padding: 24px;
   background: #FFFFFF;
   border-radius: 20px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(50% - 10px);
   flex: 0 1 calc(50% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   cursor: default;
   &__date {
@@ -51,6 +58,8 @@
     }
   }
   &__author {
+
+    -ms-flex-item-align: start;
 
     align-self: flex-start;
     margin-top: auto;

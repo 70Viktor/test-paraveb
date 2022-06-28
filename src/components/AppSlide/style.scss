@@ -1,5 +1,7 @@
 .wrap {
   background: url("@/assets/img-hero.png") bottom right/666px no-repeat,
+  -o-linear-gradient(349.32deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
+  background: url("@/assets/img-hero.png") bottom right/666px no-repeat,
   linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
   padding: 100px 0 180px;
   overflow: hidden;
@@ -8,10 +10,14 @@
   @media (max-width: 1200px) {
     padding: 40px 0 160px;
     background: url("@/assets/img-hero.png") bottom right/475px no-repeat,
+    -o-linear-gradient(349.32deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
+    background: url("@/assets/img-hero.png") bottom right/475px no-repeat,
     linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
   }
   @media (max-width: 768px) {
     padding: 20px 0 160px;
+    background: url("@/assets/img-hero.png") bottom right/60% no-repeat,
+    -o-linear-gradient(349.32deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
     background: url("@/assets/img-hero.png") bottom right/60% no-repeat,
     linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
   }

@@ -3,12 +3,17 @@
 }
 
 .card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 20px;
   @media (max-width: 768px) {
     gap: 16px;
     &--item {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
       flex: 1 1 100%;
     }
   }
