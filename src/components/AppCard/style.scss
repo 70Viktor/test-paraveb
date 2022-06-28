@@ -41,6 +41,14 @@
       -webkit-box-orient: vertical;
       height: calc (3 * 24px);
     }
+
+    @media (max-width: 768px) {
+      height: calc (4 * 24px);
+      &--truncated {
+        -webkit-line-clamp: 4;
+        height: calc (4 * 24px);
+      }
+    }
   }
   &__author {
 

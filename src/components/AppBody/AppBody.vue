@@ -3,7 +3,7 @@
         <div class="container">
             <sticky-filter/>
             <section class="card__wrapper" v-if="filteredArticlesAuthorAndDate.length > 0">
-                <app-card v-for="(article, index) in filteredArticlesAuthorAndDate" :key="index" :article="article"/>
+                <app-card class="card__wrapper--item" v-for="(article, index) in filteredArticlesAuthorAndDate" :key="index" :article="article"/>
             </section>
             <h2 class="message" v-else>Ничего не нашлось :( <br>Попробуйте изменить параметры фильтрации</h2>
         </div>

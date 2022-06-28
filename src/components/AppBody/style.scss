@@ -1,12 +1,17 @@
 .wrap {
   position: relative;
-  min-height: 100vh;
 }
 
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  @media (max-width: 768px) {
+    gap: 16px;
+    &--item {
+      flex: 1 1 100%;
+    }
+  }
 }
 
 .message {

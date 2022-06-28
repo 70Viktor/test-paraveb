@@ -4,10 +4,19 @@
   padding: 15px 0;
   margin: 25px 0 40px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   background: #F7F9FF;
+  @media (max-width: 768px) {
+    top: 56px;
+    margin: 17px 0;
+    gap: 16px;
+  }
 }
 
 .filter__item {
   flex: 1 0;
+  @media (max-width: 768px) {
+    flex: 0 1 100%;
+  }
 }

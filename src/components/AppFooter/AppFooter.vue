@@ -2,7 +2,7 @@
     <footer class="footer__wrap">
         <div class="container">
             <ul class="footer__links">
-                <li class="footer__links-item footer__links-logo"><a href="#"><img src="@/assets/logo-footer.svg" alt=""></a></li>
+                <li class="footer__links-logo"><a href="#"><img src="@/assets/logo-footer.svg" alt=""></a></li>
                 <li class="footer__links-item"><a href="#">Готовые решения</a></li>
                 <li class="footer__links-item"><a href="#">О нас</a></li>
                 <li class="footer__links-item"><a href="#">Блог</a></li>

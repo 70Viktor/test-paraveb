@@ -1,7 +1,7 @@
 <template>
     <app-slide/>
-<!--    <app-body/>-->
-<!--    <app-footer/>-->
+    <app-body/>
+    <app-footer/>
 </template>
 
 <script>

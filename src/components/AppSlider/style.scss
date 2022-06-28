@@ -1,6 +1,9 @@
 .slider {
   margin-top: 88px;
   z-index: 0;
+  @media (max-width: 768px) {
+    margin-top: 72px;
+  }
 }
 .vue-carousel__indicators {
   left: calc((100vw - (1200 - 16 * 2) * 1px) / 2) !important;

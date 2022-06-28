@@ -39,6 +39,9 @@
   color: rgba(0, 0, 0, 0.65);
   opacity: 0;
   background: transparent;
+  @media (max-width: 370px) {
+    text-align: right;
+  }
   &:valid {
     opacity: 1;
   }

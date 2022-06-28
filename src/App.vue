@@ -24,7 +24,7 @@
   a:focus,a:active{outline: none;}
   nav,footer,header,aside{display: block;}
   html,body{height:100%;width:100%;line-height:24px;font-size:16px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-  body{min-height: 100%;overflow-x: hidden; background: #F7F9FF;}
+  body{min-height: 100%;overflow-x: hidden; background: #F6F9FF;}
   input,button,textarea{font-family:inherit;}
   input::-ms-clear{display: none;}
   button{cursor: pointer;}
