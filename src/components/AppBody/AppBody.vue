@@ -1,5 +1,6 @@
 <template>
     <main class="wrap">
+        <app-slide/>
         <div class="container">
             <sticky-filter/>
             <section class="card__wrapper" v-if="filteredArticlesAuthorAndDate.length > 0">
@@ -14,9 +15,10 @@
     import AppCard from "@/components/AppCard/AppCard";
     import { mapState } from 'vuex'
     import StickyFilter from "@/components/StickyFilter/StickyFilter";
+    import AppSlide from "@/components/AppSlider/AppSlider";
     export default {
         name: "AppBody",
-        components: {StickyFilter, AppCard},
+        components: {AppSlide, StickyFilter, AppCard},
         computed: {
             ...mapState(['ARTICLES', 'selectedAUTHOR', 'DATE_FROM', 'DATE_TO']),
             filteredArticlesAuthor() {
