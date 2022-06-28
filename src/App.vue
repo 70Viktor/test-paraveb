@@ -39,4 +39,15 @@
     padding: 0 16px;
     margin: 0 auto;
   }
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #0050EF;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
 </style>

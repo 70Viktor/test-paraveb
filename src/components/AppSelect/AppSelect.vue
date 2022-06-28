@@ -1,11 +1,16 @@
 <template>
     <div class="select__wrap">
         <div class="select__selected" @click.stop="openSelect = !openSelect">
-            <img src="@/assets/icon-author.svg" class="select__selected_icon" @click.stop="SELECT_AUTHOR('')">
+            <img
+                    src="@/assets/icon-author.svg"
+                    class="select__selected_icon"
+                    @click.stop="SELECT_AUTHOR('')"
+                    title="Обнулить выбор"
+            >
             <div class="select__selected_placeholder">{{ selectedAUTHOR ? selectedAUTHOR : 'Выбор автора' }}</div>
             <img src="@/assets/icon-arrow.svg" alt="" class="select__selected_arrow" :class="{'_active': openSelect}">
         </div>
-        <div class="select__items" v-show="openSelect">
+        <div class="select__items" v-show="openSelect" @click.stop>
             <ol class="select__items_wrap">
                 <li class="select__item" v-for="author in filteredAUTHORS" @click="selectAUTHOR(author)">
                     {{ author }}

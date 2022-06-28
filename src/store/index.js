@@ -4,7 +4,9 @@ export default createStore({
   state: {
     ARTICLES: [],
     AUTHORS: [],
-    selectedAUTHOR: ''
+    selectedAUTHOR: '',
+    DATE_FROM: '',
+    DATE_TO: ''
   },
   getters: {
   },
@@ -19,6 +21,12 @@ export default createStore({
     },
     SELECT_AUTHOR(state, author) {
         state.selectedAUTHOR = author
+    },
+    SET_DATE_FROM(state, dateStr) {
+    state.DATE_FROM = dateStr
+    },
+    SET_DATE_TO(state, dateStr) {
+      state.DATE_TO = dateStr
     }
   },
   actions: {

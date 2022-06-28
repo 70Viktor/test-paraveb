@@ -10,11 +10,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
   &_icon {
-    cursor: pointer;
+    transition: 0.3s cubic-bezier(.03,1.84,.92,1.9);
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   &_placeholder {
-    cursor: pointer;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -46,14 +49,14 @@
     max-height: 300px;
     overflow-y: auto;
     &::-webkit-scrollbar {
-      width: 6px;               /* ширина scrollbar */
+      width: 6px;
     }
     &::-webkit-scrollbar-track {
-      background: unset;        /* цвет дорожки */
+      background: unset;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 80, 239, 0.2);   /* цвет плашки */
-      border-radius: 20px;       /* закругления плашки */
+      background-color: rgba(0, 80, 239, 0.2);
+      border-radius: 20px;
     }
   }
 }

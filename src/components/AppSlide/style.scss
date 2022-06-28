@@ -1,9 +1,20 @@
 .wrap {
-  background: url("@/assets/img-hero.png") bottom right no-repeat, linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);
+  background: url("@/assets/img-hero.png") bottom right/666px no-repeat,
+  linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
   padding: 100px 0 180px;
   overflow: hidden;
   position: relative;
   width: 100vw;
+  @media (max-width: 1200px) {
+    padding: 40px 0 160px;
+    background: url("@/assets/img-hero.png") bottom right/475px no-repeat,
+    linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 0 160px;
+    background: url("@/assets/img-hero.png") bottom right/60% no-repeat,
+    linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%) center/ cover no-repeat;
+  }
 }
 .slide {
 
@@ -15,7 +26,7 @@
   }
 
   &__text {
-    max-width: 520px;
+    max-width: 400px;
     margin-top: 24px;
     color: #FFFFFF;
   }
@@ -31,12 +42,30 @@
     padding: 16px 32px;
   }
 
-  .bg__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    & img {
-      max-width: 100%;
+  @media (max-width: 1200px) {
+    &__title {
+      font-size: 30px;
+      line-height: 42px;
+    }
+    &__text {
+      margin-top: 20px;
+    }
+    &__btn {
+      margin-top: 28px;
+      padding: 15px 30px;
+    }
+  }
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__text {
+      margin-top: 16px;
+    }
+    &__btn {
+      margin-top: 24px;
+      padding: 14px 28px;
     }
   }
 }

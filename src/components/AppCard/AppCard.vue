@@ -1,12 +1,12 @@
 <template>
     <article class="card">
         <time class="card__date">{{ date }}</time>
-        <div class="card__title">
+        <div class="card__title" :title="article.title">
             <h2 class="card__title--truncated">
                 {{ article.title }}
             </h2>
         </div>
-        <div class="card__description">
+        <div class="card__description" :title="article.description">
             <p class="card__description--truncated">
                 {{ article.description }}
             </p>

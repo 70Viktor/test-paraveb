@@ -11,18 +11,47 @@
     justify-content: space-between;
     align-items: center;
     height: 88px;
+    @media (max-width: 768px) {
+      height: 56px;
+    }
   }
 }
 
 .nav {
+  &__logo {
+    max-height: 30px;
+    @media (max-width: 768px) {
+      max-height: 24px;
+    }
+  }
   &__links {
     display: flex;
+    align-items: center;
     gap: 40px;
+    @media (max-width: 768px) {
+      gap: 16px;
+    }
     &-item a {
+      padding: 15px 0;
       font-weight: 500;
       font-size: 16px;
       line-height: 20px;
       color: #888888;
     }
+  }
+}
+
+.phone,
+.mail {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.link {
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
   }
 }

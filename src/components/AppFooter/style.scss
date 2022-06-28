@@ -1,0 +1,33 @@
+.footer__wrap {
+  margin-top: 80px;
+  padding: 48px 0;
+  background: #011846;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  &-logo {
+    margin-right: auto;
+  }
+  &-item a {
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+}
+
+.footer__social {
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &-copy {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

@@ -1,15 +1,17 @@
 <template>
     <app-slide/>
-    <app-body/>
+<!--    <app-body/>-->
+<!--    <app-footer/>-->
 </template>
 
 <script>
 
 
-import AppSlide from "@/components/AppSlider/AppSlide";
+import AppSlide from "@/components/AppSlider/AppSlider";
 import AppBody from "@/components/AppBody/AppBody";
+import AppFooter from "@/components/AppFooter/AppFooter";
 export default {
   name: 'HomeView',
-    components: {AppBody, AppSlide},
+    components: {AppFooter, AppBody, AppSlide},
 }
 </script>
