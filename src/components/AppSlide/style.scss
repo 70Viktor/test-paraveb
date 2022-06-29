@@ -75,3 +75,43 @@
     }
   }
 }
+
+.slide__btn {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.slide__btn::after {
+  content: attr(data-replace);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  transform-origin: 50% 100%;
+  transform: translate3d(0, -200%, 0);
+  transition: .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #FFFFFF;
+  opacity: 0;
+}
+
+.slide__btn:hover::after {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.slide__btn span {
+  display: inline-block;
+  transition: .3s cubic-bezier(0.76, 0, 0.24, 1);
+  opacity: 1;
+}
+
+.slide__btn:hover span {
+  transform: translate3d(0, 200%, 0);
+  opacity: 0;
+}
+
+.slide__btn:hover {
+  background: #0050EF;
+}

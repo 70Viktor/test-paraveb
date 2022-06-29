@@ -9,7 +9,7 @@
                 <li class="footer__links-item"><a href="#">Контакты</a></li>
             </ul>
             <ul class="footer__social">
-                <li class="footer__social-item footer__social-copy"><small>&copy; ООО «Лого», 2008—2022</small></li>
+                <li class="footer__social-copy"><small>&copy; ООО «Лого», 2008—2022</small></li>
                 <li class="footer__social-item"><a href="#"><img src="@/assets/icon-social-1.svg" alt=""></a></li>
                 <li class="footer__social-item"><a href="#"><img src="@/assets/icon-social-2.svg" alt=""></a></li>
                 <li class="footer__social-item"><a href="#"><img src="@/assets/icon-social-3.svg" alt=""></a></li>

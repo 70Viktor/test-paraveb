@@ -42,7 +42,7 @@
       gap: 16px;
     }
     &-item a {
-      padding: 15px 0;
+      padding: 8px 0;
       font-weight: 500;
       font-size: 16px;
       line-height: 20px;
@@ -64,4 +64,35 @@
   @media (max-width: 768px) {
     display: none;
   }
+}
+
+.link__a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.link__a::after {
+  content: attr(data-replace);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  transform-origin: 50% 100%;
+  transform: translate3d(0, 200%, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #0050EF;
+}
+
+.link__a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.link__a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.link__a:hover span {
+  transform: translate3d(0, -200%, 0);
 }
